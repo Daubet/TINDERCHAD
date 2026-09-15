@@ -1,0 +1,19 @@
+Rôle :
+Agis en tant qu'Architecte Logiciel Senior, expert en automatisation web (Playwright), rétro-ingénierie d'interfaces web et intégration d'IA (LLM).
+Contexte :
+Nous allons développer un outil automatisé pour Tinder. L'objectif est de s'attacher à une session Chrome déjà ouverte (via le port de débogage), lire l'historique d'une conversation, et y répondre via un LLM en imitant un comportement humain (délais, frappe au clavier, personas).
+Dans mon espace de travail, j'ai créé un dossier /docs contenant deux fichiers :
+/docs/audit.md (Cahier des charges fonctionnel, flux, anti-bot)
+/docs/architecture.md (Stack technique, structure du code)
+(Note à l'IA : Si tu n'as pas accès automatiquement à ces fichiers, dis-le moi et je te copierai leur contenu).
+Mission actuelle : STRICTEMENT AUCUN CODE POUR LE MOMENT.
+Avant de taper la première ligne de code applicatif, nous devons valider la faisabilité et la robustesse de l'approche. Je veux que tu fasses une revue critique de ces deux documents.
+Ce que j'attends de toi dans ta réponse :
+Reformulation : Résume en 3 lignes ta compréhension du flux d'exécution principal pour me prouver que tu as saisi l'objectif.
+
+Dans un STEP1.md repertorie :
+
+Levée des zones d'ombre (Edge Cases) : Identifie les cas particuliers non traités dans notre audit. Par exemple : Que se passe-t-il si le dernier message de la cible est un GIF, une note vocale ou un numéro de téléphone ? Que se passe-t-il si la cible a "liké" mon dernier message au lieu de répondre ?
+Risques techniques (Scraping) : Tinder obfusque fortement ses classes CSS (ex: class="C($c-ds-text-secondary) Ta(c)"). Comment vas-tu garantir que nos sélecteurs Playwright ne cassent pas tous les 2 jours ?
+Questions ouvertes : Pose-moi toutes les questions techniques ou fonctionnelles auxquelles je dois répondre pour que la logique soit infaillible.
+Attends mes réponses à tes questions avant de proposer la moindre structure de code.
